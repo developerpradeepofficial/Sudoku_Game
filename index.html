@@ -11,6 +11,7 @@
       rel="icon"
       type="image/x-icon"
     />
+    <script src="valdate.js"></script>
     <title>Sudoku Game</title>
   </head>
   <body>
@@ -97,7 +98,6 @@
         alert("Value Must be 0-9");
         inpRef.value = "";
       }
-
       if (num == "") {
         return false;
       }
@@ -125,8 +125,10 @@
           }
         }
       }
+
       showColor("green", id);
       return true;
+     
     }
     function showColor(color, id) {
       let inpRef = document.getElementById(id);
